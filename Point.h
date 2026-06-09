@@ -53,19 +53,19 @@ public:
 	* @brief Оператор, который присваивает значение одной точки другой
 	* @param other - точка
 	*/
-	void operator = (const Point other);
+	void operator = (const Point& other);
 
 	/**
 	* @brief Оператор, который сравнивает 2 точки (они считаются не равными, если хотя бы 1 пара координат не равна)
 	* @param other - точка
 	* @return Единица, если точки не совпадают, иначе - ноль
 	*/
-	bool operator != (const Point other) const;
+	bool operator != (const Point& other) const;
 
 	/**
 	* @brief Оператор, который сравнивает 2 точки (они считаются равными, если координаты попарно равны)
 	* @param other - точка
 	* @return Единица, если точки совпадают, иначе - ноль
 	*/
-	bool operator == (const Point other) const;
+	bool operator == (const Point& other) const;
 };
