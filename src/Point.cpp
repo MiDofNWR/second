@@ -1,4 +1,5 @@
 #include "../include/Point.h"
+#include <float.h>
 
 Point::Point(const double x, const double y)
 {
@@ -8,7 +9,7 @@ Point::Point(const double x, const double y)
 
 bool Point::operator == (const Point& other) const
 {
-    return x == other.x && y == other.y;
+    return std::abs(x - other.x) < DBL_EPSILON && std::abs(x - other.y) < DBL_EPSILON;
 }
 
 ostream& operator << (ostream& output, const Point& point)
