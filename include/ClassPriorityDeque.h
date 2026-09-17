@@ -91,13 +91,13 @@ public:
 	* @brief Конструктор класса, задаёт очередь с приоритетом по списку инициализации
 	* @param other - список пар значение-приоритет
 	*/
-	PriorityDeque(initializer_list<pair<Type, int>> other);
+	PriorityDeque(const initializer_list<pair<Type, int>> other);
 
 	/**
 	* @brief Конструктор класса, задаёт очередь с приоритетом по переданному списку
 	* @param other - список пар значение-приоритет
 	*/
-	PriorityDeque(list<pair<Type, int>>& other);
+	PriorityDeque(const list<pair<Type, int>>& other);
 
 	/**
 	* @brief Конструктор класса, задаёт очередь с приоритетом по переданной очереди
